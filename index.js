@@ -1,14 +1,22 @@
+function search(event) {
+  event.preventDefault();
+  let searchInputElement = document.querySelector("#search-form-input");
+  let cityElement = document.querySelector("#city");
+  cityElement.innerHTML =searchInput.value;
+
+
+let searchFormElement = document.querySelector("#search-form");
+searchFormElement.addEventListener("submit", search);
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#current-temperature");
   let temperature = Math.round(response.data.temperature.current);
-  let cityElement = document.querySelector("#current-city");
+  
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = temperature;
 }
 
-function search(event) {
-  event.preventDefault();
-  let searchInputElement = document.querySelector("#search-input");
+
   let city = searchInputElement.value;
 
   let apiKey = "b2a5adcct04b33178913oc335f405433";
@@ -44,8 +52,7 @@ function formatDate(date) {
   return `${formattedDay} ${hours}:${minutes}`;
 }
 
-let searchForm = document.querySelector("#search-form");
-searchForm.addEventListener("submit", search);
+
 
 let currentDateELement = document.querySelector("#current-date");
 let currentDate = new Date();
