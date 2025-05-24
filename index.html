@@ -17,18 +17,19 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city.."  required />
-          <input type="submit" value="Search" />
+        <form class="search-form">
+          <input type="search" placeholder="Enter a city.."  required class="search-form-input"/>
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
+        <div class="weather-app-data">
         <div>
-            <h1>Paris</h1>
-            <p>
+            <h1 class="weather-app-city">Paris</h1>
+            <p class="weather-app-details">
               Tuesday 14:59, moderate rain 
               <br/>
-              Humidity: 87%, Wind: 7.2km/h
+              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
             </p>
           </div>
           <div class="current-temperature">
@@ -36,6 +37,7 @@
             ><span class="current-temperature-value" id="current-temperature"
               >24</span
             ><span class="current-temperature-unit">°C</span>
+          </div>
           </div>
         </div>
       </main>
