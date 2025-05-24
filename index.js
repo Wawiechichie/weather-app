@@ -3,12 +3,13 @@ function search(event) {
   let searchInputElement = document.querySelector("#search-form-input");
   let cityElement = document.querySelector("#city");
   cityElement.innerHTML =searchInput.value;
+}
 
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", search);
 
-function displayTemperature(response) {
+/*function displayTemperature(response) {
   let temperatureElement = document.querySelector("#current-temperature");
   let temperature = Math.round(response.data.temperature.current);
   
@@ -57,4 +58,4 @@ function formatDate(date) {
 let currentDateELement = document.querySelector("#current-date");
 let currentDate = new Date();
 
-currentDateELement.innerHTML = formatDate(currentDate);
+currentDateELement.innerHTML = formatDate(currentDate);*/
