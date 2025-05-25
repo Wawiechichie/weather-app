@@ -2,9 +2,16 @@
 body {
   background-color: #f9f7fe;
   font-family: "Roboto", sans-serif;
-  
-}
-
+  }
+video {
+    position:absolute;
+    top: 0;
+    left: 0;
+    bottom: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index:-100;
+  }
 a {
   color: #885df1;
 }
