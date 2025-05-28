@@ -1,16 +1,13 @@
 
-body {
-  background-color: #f9f7fe;
-  font-family: "Roboto", sans-serif;
-  }
-video {
-    position:absolute;
-    top: 0;
-    left: 0;
-    bottom: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    z-index:-100;
+
+  .bgImages{
+    position: relative;
+    width: 100%;
+    height:100vh;
+    background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/166/847/original/city.jpg?1748472864");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 a {
   color: #885df1;
@@ -19,9 +16,9 @@ a {
 .weather-app {
   background: white;
   max-width: 600px;
-  margin: 45px auto;
+  margin: 0 auto;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
-  border-radius: 16px;
+  border-radius: 56px;
   padding: 30px;
 }
 
@@ -66,13 +63,13 @@ main {
 
 .weather-app-details {
   font-size: 16px;
-  color: rgba(39, 33, 66, 0.4);
+  color: rgba(39, 33, 66, 0.9);
   line-height: 24px;
   font-weight: 500;
 }
 
 .weather-app-details strong {
-  color: #f65282;
+  color: #0d0d0d;
 }
 
 .weather-app-temperature-container {
@@ -119,7 +116,7 @@ main {
 
 .weather-forecast-temperatures{
   text-align: center;
-  color: #f65282;
+  color: #0d0d0d;
   display: flex;
   justify-content: center;
   margin-top: 10px;
