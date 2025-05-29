@@ -102,7 +102,7 @@ function formatDay(timestamp){
   searchFormElement.addEventListener("submit", handleSearchSubmit);
   
   searchCity("Johannesburg");
-  /*displayForecast();*/
+  
 
 
   
